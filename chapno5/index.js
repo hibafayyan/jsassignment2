@@ -166,6 +166,9 @@ alert(`${celsius}
 
 
 
+
+
+
 // 7. Write a program to implement checkout process of a
 // shopping cart system for an e - commerce website.Store
 // the following in variables
@@ -200,3 +203,120 @@ document.writeln (`
 
 
 
+// 8. Store total marks & marks obtained by a student in 2
+// variables. Compute the percentage & show the result in
+// your browser
+
+
+let totalMarks = 800;
+let marksObtained = 645;
+let percentage = (marksObtained / totalMarks) * 100;
+
+document.writeln(`
+    <h1>Student Marks Percentage</h1>
+
+     <li>Total marks : ${totalMarks} </li>
+<li> Marks Obtained  : ${marksObtained} </li> <hr>
+<li>  Percentage secured : ${percentage } % </li>
+    
+    
+    `)
+
+
+//     9. Assume we have 10 US dollars & 25 Saudi Riyals. Write a
+// script to convert the total currency to Pakistani Rupees.
+// Perform all calculations in a single expression.
+// (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee
+// and 1 Saudi Riyal = 28 Pakistani Rupee)
+
+
+
+let usd=10;
+let sar=25;
+let usdRate=104.0;
+let sarRate=28;
+total=(usd * usdRate ) + (sar * sarRate );
+
+
+document.writeln (`
+    
+    <h1>Currency Conversion</h1>
+ <p>US dollars :${usd}$</p>
+  <p> Saudi Riyals :${sar}Riyals</p>
+  <p>Conversion Rate of Usd  :${usdRate}  Pakistani Rupees</p>
+<p>Conversion Rate of Saudi Riyal :${sarRate}  Pakistani Rupees</p>
+<p>The total currency to Pakistani Rupees : ${total} PKR</p> <hr>
+
+
+    
+    
+    `)
+
+
+//     10. Write a program to initialize a variable with some
+// number and do arithmetic in following sequence:
+// a. Add 5
+// b. Multiply by 10
+// c. Divide the result by 2
+// Perform all calculations in a single expression
+
+
+
+let number=5;
+let result=(number+5)*10 /2 ;
+document.writeln(`
+    <h1>Arithmetic Calculation</h1>
+
+    <p>${number} +5 x 10 / 2 = ${result}</p><hr>
+    
+    `)
+
+
+//     11. The Age Calculator: Forgot how old someone is?
+// Calculate it!
+// a. Store the current year in a variable.
+// b. Store their birth year in a variable.
+// c. Calculate their 2 possible ages based on the stored
+// values.
+
+
+let year=2026;
+let birthYear =+prompt("Enter your Birth Year!");
+let calculate= year - birthYear;
+let age2=calculate-1;
+
+
+alert(
+    ` Age Calculator
+ Current year is ${year}
+ Your birth Year is ${birthYear} 
+ So your Current Age is ${calculate} or ${age2}Years
+
+     `
+)
+
+
+// 12. The Geometrizer: Calculate properties of a circle.
+// a. Store a radius into a variable.
+// b. Calculate the circumference based on the radius, and
+// output “The circumference is NN”.
+// (Hint : Circumference of a circle = 2 π r , π = 3.142)
+// Calculate the area based on the radius, and output “The
+// area is NN”. (Hint : Area of a circle = π r2, π = 3.142)
+
+
+let radius=+prompt("Enter Radius");
+let pi=3.14;
+let circum=2*pi*radius;
+let area=pi*radius*radius;
+
+
+document.writeln(`
+    <h1>The Geometrizer</h1>
+<p>The circumference of a circle is ${circum}</p>
+<p>The area of a circle is ${area}</p>
+    `)
+
+
+
+    
