@@ -152,3 +152,100 @@ array.sort(function(a,b)
 })
 
 console.log(array);
+
+// 11. Write a program to initialize an array with city names.
+// Copy 3 array elements from cities array to selectedCities
+// array.
+
+// method 1 
+
+// let cities= ["karachi","Lahore","Quetta","Islamabad","Peshawar"];
+
+// let selectedCities=cities.slice(0,3);
+// console.log(cities);
+// console.log(selectedCities);
+
+
+// method 2 loop
+
+let cities= ["karachi","Lahore","Quetta","Islamabad","Peshawar"];
+let selectedCities=[];
+
+for(let i=0 ; i<3 ; i++){
+      selectedCities[i]=cities[i]
+}
+console.log(selectedCities);
+
+
+
+// 12. Write a program to create a single string from the
+// below mentioned array:
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+// (Use array’s join method)
+
+ var cat= ["This ", " is ", " my ", " cat"];
+ var result=cat.join("");
+
+ console.log(result);
+
+
+
+ alert(2+4);
+
+//  13. Create a new array. Store values one by one in such a way
+// that you can access the values in the order in which they
+// were stored. (FIFO-First In First Out)
+
+let devices=[];
+devices.push("keyboard");
+console.log(devices);
+
+
+devices.push("mouse");
+console.log(devices);
+
+devices.push("cpu");
+console.log(devices);
+
+devices.push("monitor");
+console.log(devices);
+
+
+devices.push("printer");
+console.log(devices);
+
+
+while (devices.length > 0) {
+    console.log(devices.shift());
+}
+
+let girls=[];
+
+girls.push("Sara");
+girls.push("Asra");
+girls.push("Mariyum");
+girls.push("Hoorain");
+girls.push("Ayesha");
+girls.push("Anosha");
+
+
+
+while(girls.length > 0){
+    console.log(girls.pop());
+}
+
+// 15. Write a program to store phone manufacturers (Apple,
+// Samsung, Motorola, Nokia, Sony & Haier) in an array.
+// Display the following dropdown/select menu in your
+// browser using document.write() method:
+
+
+let phones=["Samsung", "Motorola", "Nokia", "Sony" ,"Haier"];
+
+
+
+
+
+
+
+
