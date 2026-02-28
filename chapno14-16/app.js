@@ -243,7 +243,12 @@ while(girls.length > 0){
 let phones=["Samsung", "Motorola", "Nokia", "Sony" ,"Haier"];
 
 
+document.writeln(`<select >`)
+for (let i=0 ; i<phones.length ; i++){
+document.writeln(`<option>${phones[i]}</option>`);
+}
 
+document.writeln(`</select>`);
 
 
 
